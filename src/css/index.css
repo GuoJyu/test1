@@ -287,3 +287,15 @@ html {
 .wrapper .main .all dl dd p {
   font-size: 0.37333rem;
 }
+
+.wrapper .main .downPull,
+.wrapper .main .upPull {
+  width: 100%;
+  height: 1.06667rem;
+  background: #f90;
+}
+
+.wrapper .main .downPull .downPull,
+.wrapper .main .upPull .downPull {
+  top: 1.06667rem;
+}

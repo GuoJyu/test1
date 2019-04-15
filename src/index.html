@@ -20,6 +20,7 @@
         </header>
         <main class="main">
             <div class="con">
+                <p class="downPull">下拉刷新</p>
                 <div class="list">
                     <ul>
                         <li>NBA</li>
@@ -105,6 +106,7 @@
                         </dd>
                     </dl>
                 </div>
+                <p class="upPull">上拉加载</p>
             </div>
         </main>
         <footer class="footer"></footer>
@@ -116,6 +118,30 @@
         var swiper = new Swiper('swiper-container', {
             autoplay: true,
             loop: true,
+
+        })
+        var downPull = document.querySelector('.downPull');
+        var upPull = document.querySelector('.upPull')
+        var h = downPull.offsetHeight;
+        var mainScroll = new BScroll('.con', {
+            probeType: 2,
+            click: true,
+            tap: true
+        })
+        mainScroll.on('scroll', function() {
+            var y = Math.abs(this.y)
+            if (y > h) {
+                downPull.innerHtml = '释放刷新'
+            } else {
+                downPull.innerHtml = '下拉刷新'
+            }
+            if (y < this.maxScroll - h) {
+                upPull.innerHtml = '释放加载'
+            } else {
+                upPull.innerHtml = '上拉加载'
+            }
+        })
+        mainScroll.on('scrollEnd', function() {
 
         })
     </script>

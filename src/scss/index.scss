@@ -91,5 +91,15 @@ html {
                 }
             }
         }
+        .downPull,
+        .upPull {
+            width: 100%;
+            height: pxTorem(40px);
+            background: #f90;
+            .downPull {
+                top: pxTorem(40px);
+            }
+            .upPull {}
+        }
     }
 }
