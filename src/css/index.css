@@ -218,7 +218,6 @@ html {
 }
 
 .wrapper .main {
-  flex: 1;
   overflow: hidden;
 }
 
@@ -293,9 +292,16 @@ html {
   width: 100%;
   height: 1.06667rem;
   background: #f90;
+  position: absolute;
 }
 
 .wrapper .main .downPull .downPull,
 .wrapper .main .upPull .downPull {
-  top: 1.06667rem;
+  top: -pxTorem(80px);
+}
+
+.wrapper .footer {
+  background: yellow;
+  width: 100%;
+  height: 1.17333rem;
 }

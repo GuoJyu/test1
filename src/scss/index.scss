@@ -29,7 +29,7 @@ html {
         }
     }
     .main {
-        flex: 1;
+        // flex: 1;
         overflow: hidden;
         .list {
             display: flex;
@@ -96,10 +96,16 @@ html {
             width: 100%;
             height: pxTorem(40px);
             background: #f90;
+            position: absolute;
             .downPull {
-                top: pxTorem(40px);
+                top: -pxTorem(80px);
             }
             .upPull {}
         }
+    }
+    .footer {
+        background: yellow;
+        width: 100%;
+        height: pxTorem(44px);
     }
 }
