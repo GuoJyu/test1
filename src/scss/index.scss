@@ -4,3 +4,92 @@
     padding: 0;
     list-style: none;
 }
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: pxTorem(40px);
+        display: flex;
+        justify-content: space-between;
+        span {
+            line-height: pxTorem(40px);
+            i {
+                font-size: pxTorem(18px);
+            }
+        }
+    }
+    .main {
+        flex: 1;
+        overflow: hidden;
+        .list {
+            display: flex;
+            background: red;
+            height: pxTorem(38px);
+            ul {
+                display: flex;
+                flex-shrink: 0;
+                line-height: pxTorem(38px);
+                li {
+                    margin-left: pxTorem(10px);
+                    color: #fff;
+                    font-size: pxTorem(14px);
+                }
+            }
+        }
+        .swiper-slide {
+            width: 100%;
+            height: pxTorem(220px);
+        }
+        .nav {
+            width: 100%;
+            height: pxTorem(120px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .box {
+                display: flex;
+                justify-content: space-between;
+                height: pxTorem(38px);
+                .box-l {
+                    p {
+                        span {
+                            color: red;
+                            border: pxTorem(1px) solid red;
+                        }
+                    }
+                }
+            }
+        }
+        .all {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            dl {
+                display: flex;
+                margin-top: pxTorem(20px);
+                dt {
+                    img {
+                        width: pxTorem(50px);
+                        height: pxTorem(50px);
+                    }
+                }
+                dd {
+                    margin-left: pxTorem(30px);
+                    p {
+                        font-size: pxTorem(14px);
+                    }
+                }
+            }
+        }
+    }
+}

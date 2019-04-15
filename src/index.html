@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
 </head>
 
 <body>
@@ -18,60 +19,106 @@
             <span><i class="iconfont icon-default-avatar"></i></span>
         </header>
         <main class="main">
-            <div class="liat">
-                <ul>
-                    <li>NBA</li>
-                    <li>CBA</li>
-                    <li>足球</li>
-                    <li>电竞</li>
-                    <li>社区</li>
-                    <li>游戏</li>
-                </ul>
-            </div>
-            <div class="swiper-wrapper">
-                <div class="swiper-contain">
-                    <div class="swiper-slide" style="background: lightcoral"></div>
-                    <div class="swiper-slide" style="background: lightblue"></div>
-                    <div class="swiper-slide" style="background: lightgreen"></div>
+            <div class="con">
+                <div class="list">
+                    <ul>
+                        <li>NBA</li>
+                        <li>CBA</li>
+                        <li>足球</li>
+                        <li>电竞</li>
+                        <li>社区</li>
+                        <li>游戏</li>
+                        <li>NBA</li>
+                        <li>CBA</li>
+                        <li>足球</li>
+                        <li>电竞</li>
+                        <li>社区</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="nav">
-                <div class="box">
-                    <div class="box-l">
-                        <p><span>NBA</span>爵士Vs快船</p>
-                    </div>
-                    <div class="box-r">
-                        <p>137-142|已结束</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background: lightcoral"></div>
+                        <div class="swiper-slide" style="background: lightblue"></div>
+                        <div class="swiper-slide" style="background: lightgreen"></div>
                     </div>
                 </div>
-            </div>
-            <div class="all">
-                <dl>
-                    <dt><img src="images/7.jpg" alt=""></dt>
-                    <dd>
-                        <h1>
-                            <h2>NBA</h2>终点站！维诺刺激最后一站得到20分</h1>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt><img src="images/7.jpg" alt=""></dt>
-                    <dd>
-                        <h1>
-                            <h2>NBA</h2>终点站！维诺刺激最后一站得到20分</h1>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt><img src="images/7.jpg" alt=""></dt>
-                    <dd>
-                        <h1>
-                            <h2>NBA</h2>终点站！维诺刺激最后一站得到20分</h1>
-                    </dd>
-                </dl>
+                <div class="nav">
+                    <div class="box">
+                        <div class="box-l">
+                            <p><span>NBA</span>爵士Vs快船</p>
+                        </div>
+                        <div class="box-r">
+                            <p>137-142|已结束</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-l">
+                            <p><span>NBA</span>爵士Vs快船</p>
+                        </div>
+                        <div class="box-r">
+                            <p>137-142|已结束</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-l">
+                            <p><span>NBA</span>爵士Vs快船</p>
+                        </div>
+                        <div class="box-r">
+                            <p>137-142|已结束</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all">
+                    <dl>
+                        <dt><img src="images/7.jpg" alt=""></dt>
+                        <dd>
+                            <h1>
+                                <h2>NBA</h2>终点站！维诺刺激最后一站得到20分</h1>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/7.jpg" alt=""></dt>
+                        <dd>
+                            <h1>
+                                <h2>NBA</h2>终点站！维诺刺激最后一站得到20分</h1>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/7.jpg" alt=""></dt>
+                        <dd>
+                            <h1>
+                                <h2>NBA</h2>终点站！维诺刺激最后一站得到20分</h1>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/7.jpg" alt=""></dt>
+                        <dd>
+                            <h1>
+                                <h2>NBA</h2>终点站！维诺刺激最后一站得到20分</h1>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/7.jpg" alt=""></dt>
+                        <dd>
+                            <h1>
+                                <h2>NBA</h2>终点站！维诺刺激最后一站得到20分</h1>
+                        </dd>
+                    </dl>
+                </div>
             </div>
         </main>
         <footer class="footer"></footer>
     </div>
     <script src="js/flexible.js"></script>
+    <script src="js/bScroll.js"></script>
+    <script src="js/swiper-4.3.5.min.js"></script>
+    <script>
+        var swiper = new Swiper('swiper-container', {
+            autoplay: true,
+            loop: true,
+
+        })
+    </script>
 </body>
 
 </html>

@@ -188,3 +188,102 @@ html {
   padding: 0;
   list-style: none;
 }
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .header {
+  width: 100%;
+  height: 1.06667rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .header span {
+  line-height: 1.06667rem;
+}
+
+.wrapper .header span i {
+  font-size: 0.48rem;
+}
+
+.wrapper .main {
+  flex: 1;
+  overflow: hidden;
+}
+
+.wrapper .main .list {
+  display: flex;
+  background: red;
+  height: 1.01333rem;
+}
+
+.wrapper .main .list ul {
+  display: flex;
+  flex-shrink: 0;
+  line-height: 1.01333rem;
+}
+
+.wrapper .main .list ul li {
+  margin-left: 0.26667rem;
+  color: #fff;
+  font-size: 0.37333rem;
+}
+
+.wrapper .main .swiper-slide {
+  width: 100%;
+  height: 5.86667rem;
+}
+
+.wrapper .main .nav {
+  width: 100%;
+  height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper .main .nav .box {
+  display: flex;
+  justify-content: space-between;
+  height: 1.01333rem;
+}
+
+.wrapper .main .nav .box .box-l p span {
+  color: red;
+  border: 0.02667rem solid red;
+}
+
+.wrapper .main .all {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .main .all dl {
+  display: flex;
+  margin-top: 0.53333rem;
+}
+
+.wrapper .main .all dl dt img {
+  width: 1.33333rem;
+  height: 1.33333rem;
+}
+
+.wrapper .main .all dl dd {
+  margin-left: 0.8rem;
+}
+
+.wrapper .main .all dl dd p {
+  font-size: 0.37333rem;
+}
